@@ -1,3 +1,11 @@
+- `cp .env-example .env`
+- add gemini and axiom api key, maybe change axiom dataset and base url
+- `pnpm i`
+- `pnpm dev`
+- visit `localhost:3000`, should send a trace
+
+---
+
 # OpenTelemetry example
 
 [OpenTelemetry](https://opentelemetry.io/) is a collection of tools for easier instrumentation of you applications.
