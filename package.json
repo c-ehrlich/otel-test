@@ -1,4 +1,8 @@
 {
+  "@vercel/otel": {
+    "@opentelemetry/resources": "^2.0.0",
+    "@opentelemetry/sdk-trace-base": "^2.0.0"
+  },
   "private": true,
   "scripts": {
     "dev": "next",
@@ -7,8 +11,11 @@
     "start:otel-verbose": "NEXT_OTEL_VERBOSE=1 next start"
   },
   "dependencies": {
-    "@vercel/otel": "latest",
-    "@opentelemetry/api": "^1.4.1",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.202.0",
+    "@opentelemetry/resources": "^2.0.1",
+    "@opentelemetry/sdk-node": "^0.202.0",
+    "@opentelemetry/sdk-trace-node": "^2.0.1",
+    "@opentelemetry/semantic-conventions": "^1.34.0",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
