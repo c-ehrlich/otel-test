@@ -1,4 +1,5 @@
 - `cp .env-example .env`
+- `cp .npmrc-example .npmrc`, add npm token
 - add gemini and axiom api key, maybe change axiom dataset and base url
 - `pnpm i`
 - `pnpm dev`

@@ -17,6 +17,7 @@
     "@opentelemetry/sdk-node": "^0.202.0",
     "@opentelemetry/sdk-trace-node": "^2.0.1",
     "@opentelemetry/semantic-conventions": "^1.34.0",
+    "@watchlyhq/ai": "^0.14.0",
     "ai": "^4.3.16",
     "next": "latest",
     "react": "^18.2.0",

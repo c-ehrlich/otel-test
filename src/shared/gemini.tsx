@@ -1,7 +1,10 @@
 import { createGoogleGenerativeAI } from "@ai-sdk/google";
+import { wrapAISDKModel } from "@watchlyhq/ai";
 
 const geminiProvider = createGoogleGenerativeAI({
   apiKey: process.env.GEMINI_API_KEY,
 });
 
-export const model = geminiProvider("gemini-2.5-flash-preview-04-17");
+export const geminiFlash = wrapAISDKModel(
+  geminiProvider("gemini-2.5-flash-preview-04-17")
+);

@@ -3,6 +3,8 @@ import { Resource, resourceFromAttributes } from "@opentelemetry/resources";
 import { NodeSDK } from "@opentelemetry/sdk-node";
 import { SimpleSpanProcessor } from "@opentelemetry/sdk-trace-node";
 import { ATTR_SERVICE_NAME } from "@opentelemetry/semantic-conventions";
+import { initAxiomAI } from "@watchlyhq/ai";
+import { tracer } from "./tracer";
 
 console.log("tktk vars", {
   AXIOM_URL: process.env.AXIOM_URL,
@@ -26,3 +28,5 @@ const sdk = new NodeSDK({
   ),
 });
 sdk.start();
+
+initAxiomAI({ tracer });
