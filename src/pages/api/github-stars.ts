@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { fetchGithubStars } from "../../shared/fetch-github-stars";
+import { fetchGithubStars } from "@/shared/fetch-github-stars";
 
 export default async function handler(
   req: NextApiRequest,

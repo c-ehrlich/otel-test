@@ -13,7 +13,7 @@ console.log("tktk vars", {
 const sdk = new NodeSDK({
   resource: resourceFromAttributes({
     [ATTR_SERVICE_NAME]: "next-app",
-  }) satisfies Resource,
+  }) as Resource,
   // spanProcessor: new SimpleSpanProcessor(new OTLPTraceExporter()),
   spanProcessor: new SimpleSpanProcessor(
     new OTLPTraceExporter({

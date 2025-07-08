@@ -1,6 +1,6 @@
 import { generateText } from "ai";
-import { fetchGithubStars } from "../shared/fetch-github-stars";
-import { model } from "../shared/gemini";
+import { fetchGithubStars } from "@/shared/fetch-github-stars";
+import { model } from "@/shared/gemini";
 
 export default async function Page() {
   const res = await generateText({
@@ -12,7 +12,7 @@ export default async function Page() {
       },
       {
         role: "user",
-        content: "What is the capital of France?",
+        content: "What is the capital of Spain?",
       },
     ],
     experimental_telemetry: { isEnabled: true },
