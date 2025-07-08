@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@ai-sdk/google": "^1.2.22",
+    "@opentelemetry/exporter-jaeger": "^2.0.1",
     "@opentelemetry/exporter-trace-otlp-http": "^0.202.0",
     "@opentelemetry/resources": "^2.0.1",
     "@opentelemetry/sdk-node": "^0.202.0",
