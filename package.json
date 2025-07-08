@@ -1,8 +1,4 @@
 {
-  "@vercel/otel": {
-    "@opentelemetry/resources": "^2.0.0",
-    "@opentelemetry/sdk-trace-base": "^2.0.0"
-  },
   "private": true,
   "scripts": {
     "dev": "next",
