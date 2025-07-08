@@ -4,7 +4,6 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "start:otel-verbose": "NEXT_OTEL_VERBOSE=1 next start"
   },
   "dependencies": {
     "@ai-sdk/google": "^1.2.22",

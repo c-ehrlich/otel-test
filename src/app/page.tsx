@@ -1,12 +1,15 @@
 import { generateText } from "ai";
-import { fetchGithubStars } from "@/shared/fetch-github-stars";
 import { geminiFlash } from "@/shared/gemini";
 import { withSpan } from "@watchlyhq/ai";
 
 export default async function Page() {
+  const userId = 123;
   const res = await withSpan(
     { workflow: "help_user", task: "get_capital" },
-    (_span) => {
+    (span) => {
+      // you have access to the span in this callback
+      span.setAttribute('user_id', userId);
+
       return generateText({
         model: geminiFlash,
         messages: [
